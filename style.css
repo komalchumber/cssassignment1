@@ -1,0 +1,177 @@
+
+body {
+	background-image: url('https://s1.1zoom.me/b5050/812/Chrysanthemums_Closeup_Black_background_Wine_color_573433_1600x1200.jpg');
+	background-repeat: no-repeat;
+	color: white;
+	margin: 20px 20px 20px 20px;;
+}
+
+abbr {
+	border-bottom: none;
+	}
+
+.intro {
+	min-width: 500px;
+	width: 80%;
+}
+
+/* type selector */
+h1 {
+	width: 100%;
+	text-align: center;
+	color: orange;
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+	animation: fade-in 1s ease-in-out;
+}
+h2 {
+	width: 100%;
+	text-align: center;
+	color: aqua;	
+	font-family: 'Raleway', sans-serif;
+	animation: colorChange 3s infinite;
+}
+
+h3 {
+	text-align: center;
+	color: #B3AE94;
+}
+
+/* class selector */
+.summary {
+	width: 150px;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*id selector*/
+#zen-supporting {
+	width: 80%;	
+}
+
+/*pseudo class selector*/
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #ad48e4;
+	}
+a:visited { 
+	font-weight: bolder; 
+	text-decoration: none; 
+	color: #ad48e4;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #ad48e4;
+	}
+
+
+/*pseudo element selector*/
+p::first-letter {
+	color: #9785a0;
+	font-size: large;
+}
+
+/*descendant combinator*/
+div nav {
+	border: white solid;
+}
+
+/*child combinator*/
+div > p {
+	font-style: italic;
+}
+
+/* direct sibling combinator */
+div + footer {
+	background-color: azure;
+}
+
+/* general sibling combinator */
+div ~ nav {
+	background-color: rgba(240, 248, 255, 0.618);
+}
+
+/* add animation */
+@keyframes fade-in {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@keyframes colorChange {
+	0% { color: aqua; }
+	50% { color: rgb(68, 226, 116);}
+	100% { color: aqua;}
+}
+
+aside {
+	width: 20%;
+	display: flex;
+	float: right;
+	padding: 10px;
+	margin: 10px;		
+}
+.sidebar {
+	margin-left: 600px; 
+	position: absolute; 
+	top: 0; 
+	right: 0;
+	}
+.sidebar .wrapper { 
+	font: 16px times new roman; 
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 200px; 
+	}
+.sidebar h3.select {  
+	margin: 10px 0 5px 0; 
+	width: 97px; 
+	height: 16px; 
+    /* text-indent: 100%; */
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.archives {  
+	margin: 25px 0 5px 0; 
+	width:57px; 
+	height: 14px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources {  
+	margin: 25px 0 5px 0; 
+	width:63px; 
+	height: 10px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em;  
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #ad48e4;
+	}
+.sidebar li a:visited {
+	color: #B3AE94;
+	}
+footer {
+		width: 75%;
+		align-items: center;
+		text-align: center;
+		padding: 20px ;
+    }
